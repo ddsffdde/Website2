@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #0f172a;
+            font-family: Arial, sans-serif;
+        }
+
+        #hello {
+            color: white;
+            font-size: 48px;
+            font-weight: bold;
+            padding: 20px 40px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, #3b82f6, #06b6d4);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body>
+
+    <div id="hello">Hello World</div>
+
+    <script>
+        // Simple JS example
+        const text = document.getElementById("hello");
+
+        text.addEventListener("click", () => {
+            text.innerText = "You clicked me!";
+        });
+    </script>
+
+</body>
+</html>
